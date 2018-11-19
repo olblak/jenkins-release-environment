@@ -1,0 +1,15 @@
+---
+# https://github.com/jfrog/charts/tree/master/stable/artifactory
+dependencies:
+  - name: artifactory
+    repository: https://charts.jfrog.io
+    version: 7.7.5
+    alias: artifactory
+    # condition: artifactory.enabled
+    import-values:
+        - child: artifactory
+          parent: artifactory.artifactory
+        - child: ingress
+          parent: artifactory.ingress
+        - child: nginx
+          parent: artifactory.nginx

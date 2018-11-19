@@ -15,3 +15,6 @@
 
 # Don't commit chart archive
 env/charts/*
+
+# Don't commit sops decrypted files
+*.dec

@@ -1,0 +1,40 @@
+# Only edit this file via `sops myvalues.release.yaml`
+nexus:
+    enabled: false
+chartmuseum:
+    enabled: false
+jenkins:
+    Master:
+        AdminPassword: ENC[AES256_GCM,data:T8Xx5++PnoeJYRq8uZVG,iv:PtcqW0yh3i/oyNAHs5NgeF5zkZssiZR2DFkh/az0T8s=,tag:+vUy11LI5cDoLb98agJY7Q==,type:str]
+        rbac:
+            install: true
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    lastmodified: '2018-11-19T11:26:07Z'
+    mac: ENC[AES256_GCM,data:hGewFOY7hGPzJ2qyol1sBu3Oe8ypU/pk250s8EnGqUIER+EqXMMayNV+iwBYSVyMrX9C++15fqRyPrl5qepu9MGEXVKBSsp1vlL505m/rTqYA8mJRojADiFPkzqRnYCkbRTTRxKAVDTgFHwAJ2HlOtzfhU6codzpP8+h0OnL9fE=,iv:dZKPe2TCWvnJCBWarkawSs1nUFc4enMtF3Pg007XZKo=,tag:/bR++a+FY3DiUgZ7j5sZqg==,type:str]
+    pgp:
+    -   created_at: '2018-11-19T11:24:59Z'
+        enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            wcFMA6wcUdUnIIlfARAALpYHjMDLhoGkPVc3TXCECexcvYQIdDBJy9iXhh6UkPXW
+            4lcgKLGVpHsUSFmaNFxLcbwKRVHzVsOliVAWxGTGeNdm3GA4idgiwxggy1qoUyOI
+            oVzn6/WNGykpe55y4UgGoh6WZBvYvujKawRDbhkPZ+1x/oeuRt8X4pLsDOFRtyCn
+            sSUIxiADalabRwj1Tm/fEneKRBvcfqJwWSbzlwdO5moMAwaqkcDY0My2EEMpDDLx
+            QPFA3VyfdouHXfGpWbeLtr7KwL35edixN6Vk7aUCqi6e3MJQSoR931hxuMYOpTpC
+            +k86w6d9JOZoPJp5awcr75BnkedtvtFd8FS970RqsYi1g7FVANst3z2zOdEeCHjo
+            Z90k0jgErrZ3D02DOFTu+Oq6n+qHIoVoLTLjEVsQaf3i6Jr5TStV0/pjW8mkPi/U
+            wOBuXE6vxZ26hI+J0U5fzwi+RAslVZb+6H+RloOuXdgOPpu4N06Z1wjeV45tlrEh
+            VDSsmttoYzorh4gw/JkVBV7+Z3On3F4A7SyyEuOR8EkxGM6EarDw6ijVH2NbV932
+            sXCd+YTbZzuPFhrYpwMJMp2A2idKBtlS6e9uW7trCeQktce+Ir8v0RJIWHiIuX49
+            W6j2HxMVlQOn2c1p5IJqs6FmQw3DsgCWAet7IjDfG+WxUzc20Pxzmc2nsr7M6ZzS
+            4AHkZvo7jMtiQaFW8Xk+ONMwhOEQt+AT4J/hdIjgPeJN8D3V4I/lLGhXM5EYWAWK
+            +ZZQ3SUu4dmTryY0MLnaTDwztSlLJJzgIuTRj8ieR4M1Yqi4WEk+dTia4v+gLuvh
+            zJwA
+            =cIep
+            -----END PGP MESSAGE-----
+        fp: 56D8342434B84E2D1CCF53D96E9A025D52210D3D
+    encrypted_suffix: AdminPassword
+    version: 3.2.0
