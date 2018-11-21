@@ -18,3 +18,6 @@ env/charts/*
 
 # Don't commit sops decrypted files
 *.dec
+
+# Don't commit myvalues.yaml used to configure jx
+myvalues.yaml
