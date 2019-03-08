@@ -1,6 +1,9 @@
 # Only edit this file via `sops myvalues.release.yaml`
 nexus:
     enabled: false
+    persistence:
+        size: 100Gi
+
 chartmuseum:
     enabled: false
 jenkins:
