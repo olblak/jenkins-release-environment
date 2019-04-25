@@ -1,15 +1,11 @@
 ---
-# https://github.com/jfrog/charts/tree/master/stable/artifactory
 dependencies:
-  - name: artifactory
-    repository: https://charts.jfrog.io
-    version: 7.7.5
-    alias: artifactory
-    # condition: artifactory.enabled
+  - name: dex
+    repository: https://kubernetes-charts.storage.googleapis.com
+    version: 0.5.0
+    alias: dex
     import-values:
-        - child: artifactory
-          parent: artifactory.artifactory
-        - child: ingress
-          parent: artifactory.ingress
-        - child: nginx
-          parent: artifactory.nginx
+        - child: dex.config
+          parent: config
+        - child: dex.ingress
+          parent: ingress

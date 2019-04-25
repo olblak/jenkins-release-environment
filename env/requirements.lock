@@ -1,6 +1,6 @@
 dependencies:
-- name: artifactory
-  repository: https://charts.jfrog.io
-  version: 7.7.5
-digest: sha256:74f0851c8c081e9eae9c2cb9b5ae26e4357bdfbdeee136f1f46e757b1159791c
-generated: 2018-11-16T11:02:23.763501686+01:00
+- name: dex
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 0.5.0
+digest: sha256:ad535c8d607e2d4e25587ae73489a2dfaaf1f9148faadc465077c1847732239d
+generated: 2019-04-23T21:16:19.343082711+02:00

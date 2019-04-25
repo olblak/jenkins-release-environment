@@ -1,63 +1,28 @@
-expose:
-    Args:
-    - --v
-    - 4
-    Annotations:
-        helm.sh/hook: post-install,post-upgrade
-        helm.sh/hook-delete-policy: hook-succeeded
-cleanup:
-    Args:
-    - --cleanup
-    Annotations:
-        helm.sh/hook: pre-delete
-        helm.sh/hook-delete-policy: hook-succeeded
-expose:
-    config:
-        domain: 40.112.52.51.nip.io
-        exposer: Ingress
-        http: "true"
-        tlsacme: "true"
-        pathMode: ""
-    Annotations:
-        helm.sh/hook: post-install,post-upgrade
-        helm.sh/hook-delete-policy: hook-succeeded
-jenkins:
-    Servers:
-        Global:
-            EnvVars:
-                TILLER_NAMESPACE: kube-system
-###
-# Artifactory
-# https://github.com/jfrog/charts/tree/master/stable/artifactory
-# https://github.com/jfrog/charts/blob/master/stable/artifactory/values.yaml
-#
-artifactory:
-    enabled: true
-    artifactory:
-        image:
-            repository: docker.bintray.io/jfrog/artifactory-oss
-        resources:
-            requests:
-                cpu: 500m
-                memory: 1Gi
-            limits:
-                cpu: "2"
-                memory: 4Gi
-        javaOpts:
-            xms: 1g
-            xmx: 4g
-    ingress:
-        enabled: true
-        hosts:
-        - artifactory.jx.40.87.124.246.nip.io
-        annotations:
-          kubernetes.io/ingress.class: nginx
-          kubernetes.io/tls-acme: "true"
-    nginx:
-        resources:
-            requests:
-                cpu: 100m
-                memory: 250Mi
-            limits:
-                cpu: 250m
-                memory: 500Mi
+#expose:
+#    Args:
+#    - --v
+#    - 4
+#    Annotations:
+#        helm.sh/hook: post-install,post-upgrade
+#        helm.sh/hook-delete-policy: hook-succeeded
+#cleanup:
+#    Args:
+#    - --cleanup
+#    Annotations:
+#        helm.sh/hook: pre-delete
+#        helm.sh/hook-delete-policy: hook-succeeded
+#expose:
+#    config:
+#        domain: 13.92.211.29.nip.io
+#        exposer: Ingress
+#        http: "true"
+#        tlsacme: "true"
+#        pathMode: ""
+#    Annotations:
+#        helm.sh/hook: post-install,post-upgrade
+#        helm.sh/hook-delete-policy: hook-succeeded
+#jenkins:
+#    Servers:
+#        Global:
+#            EnvVars:
+#                TILLER_NAMESPACE: kube-system
