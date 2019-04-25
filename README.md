@@ -47,9 +47,10 @@ Once you have all the requirements, you can:
 ## TODO
 
 ### Jenkins
-- [ ] Jenkins should contains following plugins by default
-  - [ ] ssh-agent
-  - [ ] pipeline-utility-steps
+- [x] Jenkins should contains following plugins by default
+  - [x] ssh-agent
+  - [x] pipeline-utility-steps
+  - [ ] ldap
  
 ### Artifactory
 As of today, we use nexus repository as jenkins-x already deploys it by default
@@ -78,3 +79,4 @@ Various
 * [Github Webhook Proxy](https://github.com/kubernetes/test-infra/blob/master/prow/cluster/ghproxy_deployment.yaml)
 * [ssh-authentication-git](https://github.com/knative/docs/blob/master/build/auth.md#ssh-authentication-git)
 * [PR](https://github.com/jenkins-x/jx/pull/1753)
+* [SSO](https://github.com/jenkins-x/sso-operator)
